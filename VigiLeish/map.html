@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mapa de Casos Epidemiológicos - Firebase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+  
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/map.css" /> 
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  
+  <header class="topbar">
+    <div class="container">
+      <img src="assets/logo.png" alt="Logo VigiLeish" class="logo" />
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="form.html">Registrar </a></li>
+          <li><a href="map.html"> Mapa </a></li>
+          <li><a href="pesquisa.html">Pesquisar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <main class="container intro">
+    <h2>Mapa de Casos Epidemiológicos</h2>
+    <p>Visualize os registros de casos diretamente no mapa, com base em dados do Firebase.</p>
+    <div id="map" class="map-container"></div>
+  </main>
+
+ 
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+
+  
+  <script src="js/firebase-config.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+
+.info-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.info-row .card {
+  flex: 1 1 45%;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.artigos li a {
+  color: #006400;
+  text-decoration: none;
+}
+

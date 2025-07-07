@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Casos Registrados - Leishmaniose</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/tabela.css">
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container">
+      <img src="assets/logo.png" alt="Logo VigiLeish" class="logo" />
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="form.html">Registrar </a></li>
+          <li><a href="map.html"> Mapa </a></li>
+          <li><a href="pesquisa.html">Pesquisar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Casos Registrados de Leishmaniose</h2>
+
+    <div class="filtro">
+      <select id="coluna">
+        <option value="0">Endereço</option>
+        <option value="1">Notificação</option>
+        <option value="2">Animal</option>
+        <option value="3">Data Observação</option>
+        <option value="4">Sintomas</option>
+        <option value="5">Outros</option>
+        <option value="6">Data Registro</option>
+      </select>
+      <input type="text" id="busca" placeholder="Pesquisar na coluna selecionada..." />
+    </div>
+
+    <p class="loading" id="carregando">🔄 Carregando dados...</p>
+
+    <table id="tabela" style="display:none;">
+      <thead>
+        <tr>
+          <th>Endereço</th>
+          <th>Notificação</th>
+          <th>Animal</th>
+          <th>Data Observação</th>
+          <th>Sintomas</th>
+          <th>Outros</th>
+          <th>Data Registro</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-body"></tbody>
+    </table>
+
+    <p id="resultado-contador" style="display:none;"></p>
+  </main>
+
+
+  <script src="js/firebase-config.js"></script>
+  <script src="js/tabela.js"></script>
+
+
+</body>
+</html>

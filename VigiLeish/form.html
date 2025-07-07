@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário Anônimo - Leishmaniose Visceral</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <main class="container">
+    <section class="form-card">
+      <h2>Formulário Anônimo de Monitoramento da Leishmaniose Visceral</h2>
+
+      <form id="formLeishmaniose">
+        <div class="form-group">
+          <label for="rua">Rua</label>
+          <input type="text" id="rua" name="rua" placeholder="Ex: Rua das Flores" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Ex: Santa Maria" required />
+          </div>
+          <div class="form-group">
+            <label for="estado">Estado</label>
+            <input type="text" id="estado" name="estado" placeholder="Ex: RS" maxlength="2" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Tipo de Notificação</label>
+          <div class="radio-group">
+            <label><input type="radio" name="notificacao" value="suspeita" required> Suspeita</label>
+            <label><input type="radio" name="notificacao" value="confirmado"> Confirmado</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Animal</label>
+          <div class="radio-group">
+            <label><input type="radio" name="animal" value="cao" required> Cão</label>
+            <label><input type="radio" name="animal" value="gato"> Gato</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="data">Data da Observação</label>
+          <input type="date" id="data" name="data" required />
+        </div>
+
+        <div class="form-group">
+          <label>Sintomas observados</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="sintomas" value="emagrecimento"> Emagrecimento</label>
+            <label><input type="checkbox" name="sintomas" value="queda-pelos"> Queda de pelos</label>
+            <label><input type="checkbox" name="sintomas" value="feridas-pele"> Feridas na pele</label>
+            <label><input type="checkbox" name="sintomas" value="fraqueza"> Fraqueza</label>
+            <label><input type="checkbox" name="sintomas" value="olhos-inchados"> Olhos inchados/vermelhos</label>
+            <label><input type="checkbox" name="sintomas" value="crescimento-unhas"> Crescimento anormal das unhas</label>
+            <label><input type="checkbox" name="sintomas" value="apatia"> Apatia</label>
+            <label>
+              <input type="checkbox" name="sintomas" value="outros"> Outros:
+              <input type="text" id="sintoma-outros" placeholder="Descreva aqui" />
+            </label>
+          </div>
+        </div>
+
+        <div class="form-button">
+  <button type="submit" class="btn">Enviar</button>
+  <a href="index.html" class="btn btn-outline">Voltar</a>
+</div>
+
+        
+        
+        <p id="mensagem"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/firebase-config.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

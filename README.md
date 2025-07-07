@@ -41,12 +41,3 @@ O VigiLeish é uma plataforma web que permite o registro anônimo de casos suspe
 - **Backend/Database:** Firebase Firestore (compatibilidade com Firebase v10)
 - **Fontes:** Google Fonts (Roboto)
 
----
-
-## Como usar
-
-### Passo 1: Clonar o repositório
-
-```bash
-git clone https://github.com/seu-usuario/vigileish.git
-cd vigileish

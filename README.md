@@ -65,7 +65,7 @@ vigileish/
 
 Desenvolvedor: Yriane de Morais\
 Email: [yrianeh@gmail.com](mailto:yrianeh@gmail.com)\
-GitHub: [https://github.com/seu-usuario](https://github.com/Yriane)
+GitHub: [https://github.com/Yriane](https://github.com/Yriane)
 
 ---
 

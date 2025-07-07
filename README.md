@@ -9,11 +9,7 @@ Plataforma colaborativa de vigilância epidemiológica focada em leishmaniose.
 - [Sobre](#sobre)
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias](#tecnologias)
-- [Como usar](#como-usar)
-- [Configuração do Firebase](#configuração-do-firebase)
 - [Estrutura do Projeto](#estrutura-do-projeto)
-- [Contribuindo](#contribuindo)
-- [Licença](#licença)
 - [Contato](#contato)
 
 ---
@@ -41,3 +37,36 @@ O VigiLeish é uma plataforma web que permite o registro anônimo de casos suspe
 - **Backend/Database:** Firebase Firestore (compatibilidade com Firebase v10)
 - **Fontes:** Google Fonts (Roboto)
 
+---
+
+## Estrutura do Projeto
+
+```
+vigileish/
+├── assets/              # Imagens, logos
+├── css/
+│   ├── index.css        # Estilos gerais
+│   ├── info.css         # Estilos específicos para info.html
+│   ├── map.css          # Estilos específicos para map.html
+│   └── tabela.css       # Estilos específicos para pesquisa.html
+├── js/
+│   ├── firebase-config.js   # Configuração do Firebase
+│   ├── map.js               # Script para mapa interativo
+│   └── tabela.js            # Script para tabela dinâmica
+├── index.html           # Página inicial
+├── info.html            # Página de informações educativas
+├── map.html             # Página com mapa dos casos
+├── pesquisa.html        # Página para consulta dos casos em tabela
+└── form.html            # Página para registro de novos casos
+```
+
+
+## Contato
+
+Desenvolvedor: Yriane de Morais\
+Email: [yrianeh@gmail.com](mailto:yrianeh@gmail.com)\
+GitHub: [https://github.com/seu-usuario](https://github.com/Yriane)
+
+---
+
+Obrigado por usar o VigiLeish! 🮟️🩺

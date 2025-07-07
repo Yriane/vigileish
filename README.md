@@ -43,7 +43,7 @@ O VigiLeish é uma plataforma web que permite o registro anônimo de casos suspe
 
 ```
 vigileish/
-├── assets/              # Imagens, logos
+├── assets/              # Imagens
 ├── css/
 │   ├── index.css        # Estilos gerais
 │   ├── info.css         # Estilos específicos para info.html
@@ -69,4 +69,4 @@ GitHub: [https://github.com/seu-usuario](https://github.com/Yriane)
 
 ---
 
-Obrigado por usar o VigiLeish! 🮟️🩺
+

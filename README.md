@@ -35,7 +35,6 @@ O VigiLeish é uma plataforma web que permite o registro anônimo de casos suspe
 - **Frontend:** HTML5, CSS3, JavaScript
 - **Mapa:** Leaflet.js + Leaflet MarkerCluster
 - **Backend/Database:** Firebase Firestore (compatibilidade com Firebase v10)
-- **Fontes:** Google Fonts (Roboto)
 
 ---
 

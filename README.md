@@ -2,6 +2,8 @@
 
 Plataforma colaborativa de vigilância epidemiológica focada em leishmaniose.
 
+🔗 Acesse a plataforma em: [https://vigileish.vercel.app/](https://vigileish.vercel.app/)
+
 ---
 
 ## Índice
@@ -35,7 +37,7 @@ O VigiLeish é uma plataforma web que permite o registro anônimo de casos suspe
 - **Frontend:** HTML5, CSS3, JavaScript
 - **Mapa:** Leaflet.js + Leaflet MarkerCluster
 - **Backend/Database:** Firebase Firestore (compatibilidade com Firebase v10)
-
+- **Hospedagem:** Vercel
 ---
 
 ## Estrutura do Projeto
